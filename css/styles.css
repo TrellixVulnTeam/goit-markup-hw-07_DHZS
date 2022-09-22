@@ -32,7 +32,7 @@ body {
   padding-bottom: 94px;
 }
 
-nav {
+.menu__navigation {
   display: flex;
 }
 
@@ -81,13 +81,6 @@ nav {
   background-color: var(--main-link-color);
 }
 
-.header-contact__list a:hover {
-  color: var(--main-link-color);
-  text-decoration: none;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .header-contact__list {
   list-style: none;
   line-height: 16px;
@@ -116,6 +109,8 @@ nav {
 .header-contact__link:hover,
 .header-contact__link:active,
 .header-contact__link:focus {
+  text-decoration: none;
+  color: var(--main-link-color);
   fill: var(--main-link-color);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -457,10 +452,6 @@ footer .container {
   padding-top: 12px;
 }
 
-.footer-newsletter {
-  padding-top: 12px;
-}
-
 .footer-media__header {
   font-weight: 700;
   font-size: 14px;
@@ -498,6 +489,7 @@ footer .container {
 
 .footer-newsletter {
   padding-left: 70px;
+  padding-top: 12px;
 }
 
 .newsletter {
@@ -789,9 +781,9 @@ footer .container {
   padding-left: 42px;
 }
 
-.input__data:focus + .icon-tel,
-.input__data:focus + .icon-envelope,
-.input__data:focus + .icon-person {
+.input__data:focus + .input__icon-tel,
+.input__data:focus + .input__icon-envelope,
+.input__data:focus + .input__icon-person {
   outline-color: var(--main-link-color);
   fill: var(--main-link-color);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -837,7 +829,7 @@ footer .container {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.checkbox-text a {
+.checkbox__policy-text a {
   color: var(--main-link-color);
 }
 
